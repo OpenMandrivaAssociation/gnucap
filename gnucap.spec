@@ -12,6 +12,7 @@ Source0:        %{name}-%{filever}.tar.bz2
 License:        GPL
 Group:          Development/Other
 Url:            http://www.geda.seul.org/tools/gnucap/index.html
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	readline-devel termcap-devel tetex-latex tetex-dvipdfm
 
 %description
