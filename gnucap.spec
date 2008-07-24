@@ -1,6 +1,6 @@
 %define name    gnucap
 %define version 20060830
-%define release %mkrel 3
+%define release %mkrel 4
 
 %define filever 2006-08-30
 
