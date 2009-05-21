@@ -1,6 +1,6 @@
 %define name    gnucap
 %define version 20060830
-%define release %mkrel 4
+%define release %mkrel 5
 
 %define filever 2006-08-30
 
@@ -9,11 +9,15 @@ Version:        %{version}
 Release:        %{release}
 Summary:        A general purpose circuit simulator
 Source0:        %{name}-%{filever}.tar.bz2
+Patch:          gnucap-2006-08-30-fix-build.patch
 License:        GPL
 Group:          Development/Other
 Url:            http://www.geda.seul.org/tools/gnucap/index.html
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	readline-devel termcap-devel tetex-latex tetex-dvipdfm
+BuildRequires:	readline-devel
+BuildRequires:	termcap-devel
+BuildRequires:	tetex-latex
+BuildRequires:	tetex-dvipdfm
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 GNUCAP is a general purpose circuit simulator. It performs nonlinear dc and 
@@ -25,25 +29,24 @@ in this release.
 
 %prep
 %setup -q -n %{name}-%{filever}
-%build
+%patch -p 1
 
-./configure --prefix=$RPM_BUILD_ROOT/%{_prefix}  
+%build
+./configure --prefix=%{buildroot}/%{_prefix}  
 %make
 make install
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 make install
-mkdir -p $RPM_BUILD_ROOT/%{_mandir}/man1/
-cp doc/gnucap.1 $RPM_BUILD_ROOT/%{_mandir}/man1/
+mkdir -p %{buildroot}/%{_mandir}/man1/
+cp doc/gnucap.1 %{buildroot}/%{_mandir}/man1/
 pushd man
 make pdf
 popd
 
-
-
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
