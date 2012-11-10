@@ -1,0 +1,22 @@
+diff -Naur --exclude '*~' gnucap-2006-08-30/modelgen/md.h gnucap-2006-08-30-fix-build/modelgen/md.h
+--- gnucap-2006-08-30/modelgen/md.h	2006-08-28 08:15:43.000000000 +0200
++++ gnucap-2006-08-30-fix-build/modelgen/md.h	2009-05-21 14:29:58.000000000 +0200
+@@ -47,6 +47,7 @@
+ // types
+ #include <complex>
+ #include <string>
++#include <cstring>
+ // containers
+ #include <list>
+ #include <vector>
+diff -Naur --exclude '*~' gnucap-2006-08-30/src/md.h gnucap-2006-08-30-fix-build/src/md.h
+--- gnucap-2006-08-30/src/md.h	2006-08-28 08:15:43.000000000 +0200
++++ gnucap-2006-08-30-fix-build/src/md.h	2009-05-21 14:32:01.000000000 +0200
+@@ -47,6 +47,7 @@
+ // types
+ #include <complex>
+ #include <string>
++#include <cstring>
+ // containers
+ #include <list>
+ #include <vector>
