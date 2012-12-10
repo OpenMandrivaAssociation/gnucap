@@ -55,3 +55,42 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 %{_datadir}/%name
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 20060830-6mdv2011.0
++ Revision: 619207
+- the mass rebuild of 2010.0 packages
+
+* Thu May 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 20060830-5mdv2010.0
++ Revision: 378342
+- fix build
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 20060830-1mdv2008.1
++ Revision: 126081
+- kill re-definition of %%buildroot on Pixel's request
+- import gnucap
+
+
+* Thu Aug 31 2006 Couriousous <couriousous@mandriva.org> 20060830-1mdv2007.0
+- 20060830 version from geda
+
+* Sat Apr 15 2006 Couriousous <couriousous@mandriva.org> 20060117-1mdk
+- 20060117 version from geda
+
+* Fri Mar 17 2006 Couriousous <couriousous@mandriva.org> 0.34-3mdk
+- Fix buildrequires
+
+* Fri Mar 17 2006 Couriousous <couriousous@mandriva.org> 0.34-2mdk
+- Rebuild
+
+* Sun Feb 06 2005 Couriousous <couriousous@mandrake.org> 0.34-1mdk
+- First Mandrakelinux release
+
