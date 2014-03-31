@@ -11,7 +11,7 @@ Source0:	%{name}-%{filever}.tar.bz2
 Source10:	%{name}.rpmlintrc
 Patch0:		gnucap-2006-08-30-fix-build.patch
 BuildRequires:	readline-devel
-BuildRequires:	termcap-devel
+BuildRequires:	ncurses-devel
 
 %description
 GNUCAP is a general purpose circuit simulator. It performs nonlinear dc and
