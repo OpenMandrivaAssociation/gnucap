@@ -3,7 +3,7 @@
 Summary:	A general purpose circuit simulator
 Name:		gnucap
 Version:	20060830
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.geda.seul.org/tools/gnucap/index.html
