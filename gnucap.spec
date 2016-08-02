@@ -1,13 +1,14 @@
 %define filever 2006-08-30
+%define _disable_rebuild_configure 1
 
 Summary:	A general purpose circuit simulator
 Name:		gnucap
 Version:	20060830
-Release:	8
+Release:	9
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://www.geda.seul.org/tools/gnucap/index.html
-Source0:	%{name}-%{filever}.tar.bz2
+Url:		http://www.gnucap.org
+Source0:	http://www.gnucap.org/devel/%{name}-%{filever}.tar.bz2
 Source10:	%{name}.rpmlintrc
 Patch0:		gnucap-2006-08-30-fix-build.patch
 BuildRequires:	readline-devel
@@ -34,6 +35,8 @@ in this release.
 %patch0 -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %configure2_5x
 %make
 
