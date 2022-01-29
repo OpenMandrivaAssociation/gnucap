@@ -25,9 +25,11 @@ in this release.
 
 %files
 %doc COPYING
-#{_bindir}/*
-#{_mandir}/man1/*
-#{_datadir}/%{name}
+%{_bindir}/gnucap*
+%{_prefix}/lib/gnucap/gnucap-default-plugins.so
+%{_prefix}/lib/libgnucap.so
+%{_includedir}/gnucap/*
+%{_sysconfdir}/gnucap.conf
 
 #----------------------------------------------------------------------------
 
