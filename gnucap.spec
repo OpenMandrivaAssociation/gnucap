@@ -37,6 +37,9 @@ in this release.
 %setup -q -n %{name}-%{version}
 %autopatch -p1
 
+ sed -i 's#INSTALL_SYSCONF_DIR = $(PREFIX)/etc#INSTALL_SYSCONF_DIR = /etc#' main/Make1
+ sed -i 's#$\\{prefix\\}/etc#/etc#' main/configure
+    
 %build
 #export CC=gcc
 #export CXX=g++
