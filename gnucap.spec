@@ -24,9 +24,9 @@ in this release.
 
 %files
 %doc COPYING
-%{_bindir}/*
-%{_mandir}/man1/*
-%{_datadir}/%{name}
+#{_bindir}/*
+#{_mandir}/man1/*
+#{_datadir}/%{name}
 
 #----------------------------------------------------------------------------
 
