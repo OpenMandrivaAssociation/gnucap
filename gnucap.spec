@@ -34,14 +34,11 @@ in this release.
 %setup -q -n %{name}-%{version}
 
 %build
-export CC=gcc
-export CXX=g++
-%configure2_5x
-%make
+#export CC=gcc
+#export CXX=g++
+%configure
+%make_build
 
 %install
-%makeinstall_std
-
-mkdir -p %{buildroot}/%{_mandir}/man1/
-cp doc/gnucap.1 %{buildroot}/%{_mandir}/man1/
+%make_install
 
