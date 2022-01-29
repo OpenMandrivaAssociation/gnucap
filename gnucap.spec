@@ -3,14 +3,14 @@
 
 Summary:	A general purpose circuit simulator
 Name:		gnucap
-Version:	20060830
-Release:	9
+Version:	20210107
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.gnucap.org
-Source0:	http://www.gnucap.org/devel/%{name}-%{filever}.tar.bz2
-Source10:	%{name}.rpmlintrc
-Patch0:		gnucap-2006-08-30-fix-build.patch
+Source0:  https://git.savannah.gnu.org/cgit/gnucap.git/snapshot/gnucap-%{version}.tar.gz
+#Source0:	http://www.gnucap.org/devel/%{name}-%{filever}.tar.bz2
+
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
 
@@ -31,8 +31,7 @@ in this release.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q -n %{name}-%{filever}
-%patch0 -p1
+%setup -q -n %{name}-%{version}
 
 %build
 export CC=gcc
