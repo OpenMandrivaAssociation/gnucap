@@ -15,7 +15,7 @@ Patch1:   fix-path.gentoo.patch
 
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
-BuildRequires: termcap-devel
+#BuildRequires: termcap-devel
 
 %description
 GNUCAP is a general purpose circuit simulator. It performs nonlinear dc and
