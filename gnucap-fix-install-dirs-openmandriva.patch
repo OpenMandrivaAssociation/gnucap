@@ -1,0 +1,19 @@
+diff -uraN gnucap-20210107/configure omv-gnucap-20210107/configure
+--- gnucap-20210107/configure	2021-01-07 09:02:47.000000000 +0100
++++ omv-gnucap-20210107/configure	2022-01-29 02:44:39.330214255 +0100
+@@ -14,13 +14,13 @@
+     else
+ 	# echo "Found unrecognized parameter in input args."
+ 	#  Just use the default prefix dir.
+-	prefix=/usr/local
++	prefix=/usr/
+     fi
+ 
+ else
+     # echo "No input parameter found."
+     #  Just use the default prefix dir
+-    prefix=/usr/local
++    prefix=/usr/
+ fi
+ 
+ args="--prefix=$prefix"
