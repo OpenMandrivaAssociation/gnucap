@@ -28,8 +28,8 @@ in this release.
 %files
 %doc COPYING
 %{_bindir}/gnucap*
-%{_libdir/gnucap/gnucap-default-plugins.so
-%{_libdir/libgnucap.so
+%{_libdir}/gnucap/gnucap-default-plugins.so
+%{_libdir}/libgnucap.so
 %{_includedir}/gnucap/*
 %{_sysconfdir}/gnucap.conf
 
