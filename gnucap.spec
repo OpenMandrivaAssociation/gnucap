@@ -11,6 +11,7 @@ Url:		http://www.gnucap.org
 Source0:  https://git.savannah.gnu.org/cgit/gnucap.git/snapshot/gnucap-%{version}.tar.gz
 #Source0:	http://www.gnucap.org/devel/%{name}-%{filever}.tar.bz2
 Patch0:   gnucap-fix-install-dirs-openmandriva.patch
+Patch1:   fix-path.gentoo.patch
 
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
