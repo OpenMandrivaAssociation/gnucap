@@ -7,7 +7,7 @@ Version:	20210107
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://www.gnucap.org
+Url:		https://www.gnucap.org
 Source0:  https://git.savannah.gnu.org/cgit/gnucap.git/snapshot/gnucap-%{version}.tar.gz
 #Source0:	http://www.gnucap.org/devel/%{name}-%{filever}.tar.bz2
 Patch0: gnucap-fix-install-dirs-openmandriva.patch
