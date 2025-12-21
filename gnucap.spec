@@ -13,6 +13,11 @@ Source0:  https://git.savannah.gnu.org/cgit/gnucap.git/snapshot/gnucap-%{version
 Patch0: gnucap-fix-install-dirs-openmandriva.patch
 Patch1: fix-path.gentoo.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
 #BuildRequires: termcap-devel
